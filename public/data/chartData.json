@@ -1,0 +1,10 @@
+{
+  "chartData":[
+		{"label": "Red", "value": "12" },
+		{"label": "Blue", "value": "19" },
+		{"label": "Yellow", "value": "3" },
+		{"label": "Green", "value": "5" },
+		{"label": "Purple", "value": "2" },
+		{"label": "Orange", "value": "3" }
+   ]
+}
