@@ -1,10 +1,11 @@
 {
   "chartData":[
-		{"label": "Red", "value": "12" },
-		{"label": "Blue", "value": "19" },
-		{"label": "Yellow", "value": "3" },
-		{"label": "Green", "value": "5" },
-		{"label": "Purple", "value": "2" },
-		{"label": "Orange", "value": "3" }
+		{"label": "Monday", "value": "12" },
+		{"label": "Tuesday", "value": "19" },
+		{"label": "Wednesday", "value": "10" },
+		{"label": "Thursday", "value": "5" },
+		{"label": "Friday", "value": "21" },
+		{"label": "Saturday", "value": "3" },
+		{"label": "Sunday", "value": "58" }
    ]
 }

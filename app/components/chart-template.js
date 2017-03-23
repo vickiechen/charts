@@ -17,7 +17,7 @@ export default Ember.Component.extend(ChartMixin, {
 	
 	actions:{
 		changeChartType(type){
-			this.set('chartType', type);			
+			this.set('chartType', type);	
 		}		
 	}
 	

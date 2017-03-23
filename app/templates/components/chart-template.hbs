@@ -1,7 +1,7 @@
 <h2> My Chart </h2>
 
-{{#power-select placeholder="Please, select a chart type" options=chartTypes onchange=(action "changeChartType" type) as |type|}}
-  {{type}}
+{{#power-select placeholder="Please, select a chart type" selected=chartType options=chartTypes onchange=(action "changeChartType") as |type|}}
+  {{type}} chart
 {{/power-select}}
 
 <hr>

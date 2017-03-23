@@ -6,7 +6,7 @@ export default Ember.Mixin.create({
 	
 	/*** chart attributes by default, you can overwrite those attributes on your own component if need ***/	
 	/* Array; refer to the ChartJS documentation. This is required, see the getChartData function below to set this value based on the endpoints */
-	chartType: ['Pie', 'Line', 'Bar', 'Doughnut', 'polarArea'],
+	chartTypes: ['pie', 'line', 'bar', 'doughnut', 'polarArea'],
 	
 	chartData: null,  	
 	
@@ -34,7 +34,7 @@ export default Ember.Mixin.create({
 	borderColor: "rgb(113,192,226)",
 	
 	/* Integer: chart background pointRadius by default */
-	pointRadius: 0, 
+	pointRadius: 1, 
 	
 	/* Boolean: indicates if animateScale scall the Doughnut/PolarArea Chart from the centre. */
 	animateScale: true,
@@ -43,7 +43,7 @@ export default Ember.Mixin.create({
 	beginAtZero: true,
 	
 	/* Boolean: indicates if the chart needs to show x and y scales */		
-	needScales: true,
+	needScales: false,
 	
 	/* Integer: xAxes label display on the mod divider. For example: 1 => show all labels, 5=> show 5, 10, 15, 20, etc.. */
 	xAxesLabelDivider: 1,
@@ -123,8 +123,8 @@ export default Ember.Mixin.create({
     }),
 
 	/* This is the default tooltip label. please overwrite this function on your component if you need different format */	
-	toolTipLabels(tooltipItems, data){		
-		return  data.labels[tooltipItems.index] + "  : " + tooltipItems.yLabel;
+	toolTipLabels(tooltipItems, data){	
+		return  data.labels[tooltipItems.index] + "  : " + data.datasets[0]['data'][tooltipItems.index];
 	},
 	
 	/* This is the default tooltip title for MDB2 Line Charts. please overwrite this function on your component if you need different format */
