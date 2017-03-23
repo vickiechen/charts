@@ -6,7 +6,7 @@ export default Ember.Service.extend({
 
 	restEndPointMaps:{ /**** All API mappings ***/
 		/*** MDB2 dashboard ***/
-		'getChartData':{'endPointName':'getChartData','title':'Get Chart Data From Json file','api':'/chartData'},	
+		'getChartData':{'endPointName':'getChartData','title':'Get Chart Data From API','api':'/chartData'},	
 	},
 
 	/***
